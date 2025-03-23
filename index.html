@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora - Event Dresses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #4B9A7D; /* Darker mint green */
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-section {
+            text-align: center;
+            padding: 3rem 0;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(3px);
+        }
+
+        .logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem 0;
+            text-align: center;
+            backdrop-filter: blur(3px);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 2.5rem;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #A3E4D7;
+            text-shadow: 0 0 15px rgba(163, 228, 215, 0.8);
+        }
+
+        .section {
+            padding: 5rem 12%;
+            min-height: 60vh;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .about-section {
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 1.9;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 2rem;
+        }
+
+        .dresses-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .dress-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .dress-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .dress-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 5rem 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-button {
+            background: #25D366;
+            color: white;
+            margin-top: 2rem;
+            padding: 1.2rem 4rem;
+            border: 2px solid white;
+            border-radius: 35px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+            background: #1DA851;
+        }
+
+        /* Add these new styles */
+        .about-section p:last-child {
+            margin-top: 1.5rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .instagram-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-link:hover {
+            color: #C13584;
+            transform: translateY(-2px);
+        }
+
+        .instagram-link i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 1.5rem;
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                font-size: 3.5rem;
+            }
+            
+            .section {
+                padding: 4rem 8%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rest of the HTML remains the same -->
+    <header class="logo-section">
+        <h1 class="logo">Aurora</h1>
+        <p>Where Fairy Tales Come to Life</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#dresses">Dresses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="section about-section" id="about">
+        <h2>Our Story</h2>
+        <p>At Aurora, we design magical evening wear that transforms you into the heroine of your own fairy tale. We create bespoke gowns that combine timeless elegance with modern sophistication. Each dress is carefully designed to make you feel confident, beautiful, and ready to shine at any special occasion.</p>
+
+        <hr>
+
+        <p>We specialize in custom-designed event dresses tailored to your unique vision, while also offering a curated collection of previously loved gowns available for both purchase and rental. Whether you seek a one-of-a-kind creation or a sustainable option for your special occasion, we provide enchanting solutions for every fairy tale journey.</p>
+    </section>
+
+    <section class="section dresses-section" id="dresses">
+        <div class="dress-card">
+            <img src="https://via.placeholder.com/300x400" alt="Enchanted Evening Gown">
+            <h3>Enchanted Evening Collection</h3>
+            <p>Hand-beaded silk gowns with celestial patterns</p>
+        </div>
+        <div class="dress-card">
+            <img src="https://via.placeholder.com/300x400" alt="Royal Ball Gown">
+            <h3>Royal Ball Gowns</h3>
+            <p>Traditional ball gowns with modern silhouettes</p>
+        </div>
+        <div class="dress-card">
+            <img src="https://via.placeholder.com/300x400" alt="Modern Fairy Tale Dress">
+            <h3>Contemporary Magic</h3>
+            <p>Modern cuts with classic fairy tale elements</p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Ready for Your Fairy Tale Moment?</h2>
+        <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+            Contact Us on WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <h3>Follow Our Magic</h3>
+        <a href="https://instagram.com/yourusername" class="instagram-link" target="_blank">
+            <i class="fab fa-instagram"></i>
+            @Aurora_Boutique
+        </a>
+    </footer>
+</body>
+</html>
